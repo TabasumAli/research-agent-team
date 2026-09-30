@@ -1,5 +1,5 @@
 crewai==1.14.3
 crewai-tools==1.14.3
 streamlit==1.45.0
-duckduckgo-search==8.0.0
+ddgs>=9.0.0
 pysqlite3-binary==0.5.4

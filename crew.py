@@ -22,9 +22,9 @@ from duckduckgo_search import DDGS
 def _get_groq_llm(temperature: float = 0.4) -> LLM:
     """Create a Groq LLM instance for CrewAI."""
     return LLM(
-        model="groq/openai/gpt-oss-120b",
+        model="groq/compound",  # ← 70,000 TPM on free tier
         temperature=temperature,
-        max_tokens=1024,  # ← REDUCED from 4096
+        max_tokens=1024,
     )
 
 

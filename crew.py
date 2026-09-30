@@ -24,7 +24,7 @@ def _get_groq_llm(temperature: float = 0.4) -> LLM:
     return LLM(
         model="groq/openai/gpt-oss-120b",
         temperature=temperature,
-        max_tokens=4096,  # keeps outputs bounded, helps with Groq TPM limits
+        max_tokens=1024,  # ← REDUCED from 4096
     )
 
 
